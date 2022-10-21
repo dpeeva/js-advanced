@@ -1,5 +1,5 @@
 const { assert, expect } = require("chai")
-const { sum } = require("../sumNumbers")
+const { sum } = require("./sumNumbers")
 
 describe("sum", () => {
     it("sums correctly integer numbers", () => {

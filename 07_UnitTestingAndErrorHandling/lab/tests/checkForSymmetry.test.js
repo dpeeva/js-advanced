@@ -1,5 +1,5 @@
-const { assert, expect } = require("chai")
-const { isSymmetric } = require("../checkForSymmetry")
+const { expect } = require("chai")
+const { isSymmetric } = require("./checkForSymmetry")
 
 describe("isSymmetric", () => {
     it("returns false for non-symmetric odd length", () => {
@@ -29,15 +29,6 @@ describe("isSymmetric", () => {
     it("returns true on empty array", () => {
         expect(isSymmetric([])).to.true
     })
-    // it("throws on empty input", () => {
-    //     expect(() => isSymmetric().to.throw())
-    // })
-    // it("throws on invalid input number", () => {
-    //     expect(() => isSymmetric(1).to.throw())
-    // })
-    // it("throws on invalid input string", () => {
-    //     expect(() => isSymmetric("a").to.throw())
-    // })
     it("returns false on invalid input empty", () => {
         expect(isSymmetric()).to.false
     })

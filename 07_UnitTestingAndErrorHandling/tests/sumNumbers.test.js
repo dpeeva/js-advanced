@@ -24,9 +24,10 @@ describe("sum", () => {
         expect(sum([-2, -2])).to.equal(-4, "did not work with [-2, -2]")
     })
     it("returns TypeError", () => {
-        assert.throws(
-            () => sum(),
-            "arr is not iterable"
-        )
+        expect(() => sum().to.throw(new TypeError("arr is not iterable")))
+        // assert.throws(
+        //     () => sum(),
+        //     "arr is not iterable"
+        // )
     })
 })
